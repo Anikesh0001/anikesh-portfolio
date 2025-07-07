@@ -143,7 +143,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 py-6 border-t border-cyan-800">
-        Made with 💙 by Anikesh Kumar | © {new Date().getFullYear()}
+           Anikesh Kumar | © {new Date().getFullYear()}
       </footer>
     </main>
   );
