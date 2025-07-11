@@ -125,7 +125,7 @@ Feel free to explore more using the 'projects', 'skills', or 'contact' commands!
               <Typing
                 key={Date.now()}
                 text={[output]}
-                speed={20}
+                speed={15}
                 eraseDelay={9999999}
                 className="text-white"
               />,
