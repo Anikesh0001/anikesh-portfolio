@@ -53,16 +53,7 @@ export default function App() {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "John Doe",
-      text: "Anikesh is a fantastic developer who brings ideas to life quickly and with quality.",
-    },
-    {
-      name: "Jane Smith",
-      text: "Professional, skilled, and always meets deadlines. Highly recommended!",
-    },
-  ];
+ 
 
   const achievements = [
     "✔ Solved 75+ LeetCode problems",
