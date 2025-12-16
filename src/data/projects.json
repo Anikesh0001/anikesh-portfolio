@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Hospital Management System",
+    "description": "A lightweight Hospital Management System (HMS) built with Flask, SQLAlchemy and Flask-Login. This project provides user roles (Admin, Doctor, Patient), appointment booking, doctor availability management, and basic admin interfaces.",
+    "tech": ["Flask", "SQLAlchemy", "Flask-Login"],
+    "link": "https://github.com/Anikesh0001/hms_mad1"
+  },
+  {
+    "name": "ProctoVision",
+    "description": "AI-based real-time exam proctoring with object & pose detection.",
+    "tech": ["React", "TensorFlow.js", "MoveNet"],
+    "link": "https://github.com/Anikesh0001/ProctoVision"
+  },
+  {
+    "name": "Sales Chatbot",
+    "description": "Conversational AI chatbot for product queries.",
+    "tech": ["Python", "LLMs"],
+    "link": "https://github.com/Anikesh0001/sales_chatbot"
+  },
+  {
+    "name": "Gmail AI Assistant",
+    "description": "AI-powered Gmail automation using n8n workflows.",
+    "tech": ["n8n", "Gemini API"],
+    "link": "https://github.com/Anikesh0001/gmail-ai-assistant-n8n"
+  },
+  {
+    "name": "Road Safety System",
+    "description": "ML-based road-safety image detection system.",
+    "tech": ["Python", "OpenCV"],
+    "link": "https://github.com/Anikesh0001/road_safety"
+  },
+  {
+    "name": "HackRx – Query Retrieval System",
+    "description": "LLM-based document QA system built for HackRx.",
+    "tech": ["FastAPI", "Pinecone", "Gemini"],
+    "link": "https://github.com/Anikesh0001/hackrx"
+  }
+]

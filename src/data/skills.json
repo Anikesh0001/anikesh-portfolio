@@ -1,0 +1,7 @@
+{
+  "frontend": ["React", "Vite", "HTML", "CSS", "JavaScript"],
+  "backend": ["FastAPI", "Node.js", "Python"],
+  "ai": ["TensorFlow.js", "Gemini API", "Perplexity API", "LLMs"],
+  "database": ["PostgreSQL", "Firebase"],
+  "tools": ["Git", "GitHub", "Docker", "n8n"]
+}
