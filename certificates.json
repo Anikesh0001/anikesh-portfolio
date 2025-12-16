@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Viksit Bharat Quiz Challenge",
+    "issuer": "Ministry of Youth Affairs & Sports, Government of India",
+    "year": "2024",
+    "type": "Participation",
+    "file": "/certificates/vikshit-bharat-quiz.jpeg",
+    "description": "Demonstrated awareness of India's development goals and national initiatives in this nationwide quiz competition."
+  },
+  {
+    "title": "Samvidhan Diwas Quiz 2024",
+    "issuer": "Ministry of Parliamentary Affairs, Government of India",
+    "year": "2024",
+    "type": "Participation",
+    "file": "/certificates/samvidhan-diwas-quiz.jpeg",
+    "description": "Participated in the Constitution Day quiz, showcasing knowledge of the Indian Constitution, its history, and key principles."
+  },
+  {
+    "title": "Agentic AI Day",
+    "issuer": "Google Cloud × Hack2Skill",
+    "year": "2025",
+    "type": "Participation",
+    "file": "/certificates/agentic-ai-day-google.png",
+    "description": "Attended an exclusive event on Agentic AI, exploring the future of autonomous AI agents and their application in enterprise solutions."
+  },
+  {
+    "title": "Google Cloud Career Launchpad – Cloud Engineer Track",
+    "issuer": "Google Cloud",
+    "year": "2025",
+    "type": "Professional Certificate",
+    "file": "/certificates/google-cloud-career-launchpad.pdf",
+    "description": "Comprehensive training on Google Cloud Platform, covering infrastructure, networking, and cloud security fundamentals."
+  },
+  {
+    "title": "Foundations of Data Science",
+    "issuer": "Google (Coursera)",
+    "year": "2025",
+    "type": "Course Certificate",
+    "file": "/certificates/coursera-foundations-data-science.pdf",
+    "description": "Mastered foundational concepts of data science, including the data analysis process, tools, and real-world case studies."
+  },
+  {
+    "title": "Foundational Level in Programming and Data Science",
+    "issuer": "Indian Institute of Technology Madras",
+    "year": "2024",
+    "type": "Academic Certificate",
+    "file": "/certificates/iit-madras-foundation-certificate.pdf",
+    "description": "Completed rigorous academic coursework in Mathematics, Statistics, Python Programming, and Computational Thinking."
+  }
+]
