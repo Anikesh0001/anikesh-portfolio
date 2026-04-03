@@ -23,7 +23,7 @@ export default function Certifications() {
 
   const getIssuerIcon = (issuer) => {
     if (issuer.includes("Google")) return "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg";
-    if (issuer.includes("Madras")) return null; // Use icon for IIT
+    if (issuer.includes("Madras")) return "https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg";
     if (issuer.includes("Government") || issuer.includes("Ministry")) return "https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg";
     return null;
   };
@@ -46,6 +46,31 @@ export default function Certifications() {
           <p className="text-gray-400 max-w-2xl mx-auto">
             Verified certifications, academic credentials, and national-level participations.
           </p>
+        </motion.div>
+
+        {/* Winning Moment Highlight */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mb-16 rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] border border-cyan-400/20 relative group"
+        >
+          <img 
+            src={getAssetPath("certificates/winning_moment.png")} 
+            alt="Winning Moment Highlight" 
+            className="w-full object-cover max-h-[70vh]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-[#030014]/40 to-transparent flex items-end">
+            <div className="p-8 md:p-12 w-full">
+              <div className="inline-block px-4 py-1 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/50 text-yellow-300 rounded-full text-sm font-bold mb-4 backdrop-blur-md">
+                🏆 Top Achievement
+              </div>
+              <h3 className="text-3xl md:text-5xl font-bold text-white mb-3 tracking-tight">Winning Moment</h3>
+              <p className="text-gray-300 max-w-3xl text-lg leading-relaxed">
+                Celebrating the victorious milestone. A testament to innovation, problem-solving, and dedication in building impactful technology.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
