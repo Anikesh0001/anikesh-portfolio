@@ -46,5 +46,29 @@
     "type": "Academic Certificate",
     "file": "/certificates/iit-madras-foundation-certificate.pdf",
     "description": "Completed rigorous academic coursework in Mathematics, Statistics, Python Programming, and Computational Thinking."
+  },
+  {
+    "title": "Hack the Hackers Hackathon",
+    "issuer": "Cybersecurity & Innovation Club",
+    "year": "2026",
+    "type": "Hackathon",
+    "file": "/certificates/hack_the_hackers.png",
+    "description": "Participated and showcased cybersecurity solutions addressing modern web vulnerabilities and data protection."
+  },
+  {
+    "title": "IIT Madras Hackathon",
+    "issuer": "Indian Institute of Technology Madras",
+    "year": "2025",
+    "type": "Hackathon",
+    "file": "/certificates/iitm_hackathon.png",
+    "description": "Competed in a rigorous hackathon building innovative tech solutions under tight deadlines."
+  },
+  {
+    "title": "Protothon Hackathon",
+    "issuer": "Innovation Cell",
+    "year": "2026",
+    "type": "Hackathon",
+    "file": "/certificates/protothon_hackathon.png",
+    "description": "Designed and prototyped innovative software solutions addressing real-world challenges in this fast-paced hackathon."
   }
 ]
