@@ -5,7 +5,7 @@ import { PROFILE } from "../data/constants";
 export default function TerminalSection() {
   const [input, setInput] = useState("");
   const inputRef = useRef(null);
-  const bottomRef = useRef(null);
+  const containerRef = useRef(null);
 
   const initialText = `
     _          _ _               _     
@@ -23,7 +23,9 @@ Type 'help' to see a list of available commands.
   ]);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
   }, [history]);
 
   const handleCommand = (e) => {
@@ -121,6 +123,7 @@ Type 'help' to see a list of available commands.
 
       {/* Terminal Body */}
       <div 
+        ref={containerRef}
         className="p-6 h-[400px] overflow-y-auto bg-[#1e1e1e] font-mono text-sm shadow-inner cursor-text"
         onClick={() => inputRef.current?.focus()}
       >
@@ -142,10 +145,8 @@ Type 'help' to see a list of available commands.
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleCommand}
             className="flex-1 bg-transparent text-green-400 outline-none border-none font-mono"
-            autoFocus
           />
         </div>
-        <div ref={bottomRef} />
       </div>
     </div>
   );
