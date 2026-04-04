@@ -2,6 +2,7 @@
 import React from "react";
 import { Mail, MapPin, Send } from "lucide-react";
 import { PROFILE } from "../data/constants";
+import TerminalSection from "./TerminalSection";
 
 export default function Contact() {
   return (
@@ -42,6 +43,12 @@ export default function Contact() {
                 </button>
             </form>
           </div>
+        </div>
+
+        {/* Terminal Experience Section */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-bold mb-6 text-center text-gray-300">Or use the Terminal...</h3>
+          <TerminalSection />
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
