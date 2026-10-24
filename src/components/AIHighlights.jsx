@@ -1,9 +1,25 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, ExternalLink, Cpu, Eye, MessageSquare, Mail } from "lucide-react";
+import { Brain, ExternalLink, Cpu, Eye, MessageSquare, Mail, Globe, Music } from "lucide-react";
 
 const AI_PROJECTS = [
+  {
+    name: "Google Maps Scraper",
+    description: "Automated data extraction tool for Google Maps. Scrapes business details, reviews, and contact info for market research and lead generation at scale.",
+    tech: "Python + Selenium",
+    icon: Globe,
+    color: "from-green-500 to-emerald-400",
+    link: "https://github.com/Anikesh0001/google-map-scrapper"
+  },
+  {
+    name: "AniMusic",
+    description: "A beautifully animated music streaming web app with playlist management, smooth UI transitions, and a seamless audio playback experience.",
+    tech: "HTML + CSS + JS",
+    icon: Music,
+    color: "from-pink-500 to-purple-500",
+    link: "https://github.com/Anikesh0001/animusic"
+  },
   {
     name: "ProctoVision",
     description: "AI-based real-time exam proctoring system featuring advanced object detection and pose estimation to ensure exam integrity.",
@@ -13,27 +29,11 @@ const AI_PROJECTS = [
     link: "https://github.com/Anikesh0001/ProctoVision"
   },
   {
-    name: "HackRx System",
-    description: "Intelligent document QA system powered by LLMs (Gemini) and Pinecone vector database for semantic search.",
-    tech: "Gemini + Pinecone",
-    icon: Brain,
-    color: "from-purple-500 to-pink-500",
-    link: "https://github.com/Anikesh0001/hackrx"
-  },
-  {
-    name: "Sales Chatbot",
-    description: "Context-aware conversational AI designed to handle complex product inquiries and drive sales automation.",
-    tech: "NLP + Python",
-    icon: MessageSquare,
-    color: "from-orange-500 to-red-500",
-    link: "https://github.com/Anikesh0001/sales_chatbot"
-  },
-  {
     name: "Gmail AI Assistant",
-    description: "Automated email management system using n8n workflows to categorize/draft responses via OpenAI.",
+    description: "Automated email management system using n8n workflows to categorize and draft responses via LLM integration.",
     tech: "OpenAI + n8n",
     icon: Mail,
-    color: "from-green-500 to-emerald-400",
+    color: "from-orange-500 to-red-500",
     link: "https://github.com/Anikesh0001/gmail-ai-assistant-n8n"
   }
 ];
@@ -43,10 +43,10 @@ export default function AIHighlights() {
     <section className="section-padding relative overflow-hidden">
       <div className="text-center mb-16 relative z-10">
         <h2 className="text-4xl font-bold mb-4">
-          Featured <span className="text-gradient">AI Solutions</span>
+          Featured <span className="text-gradient">Projects Spotlight</span>
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Cutting-edge artificial intelligence projects pushing the boundaries of automation and computer vision.
+          Standout projects showcasing automation, AI, and creative development.
         </p>
       </div>
 

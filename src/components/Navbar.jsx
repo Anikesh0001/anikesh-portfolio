@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Code2, User, Database, Send, BookOpen, FileText } from "lucide-react";
+import { Menu, X, Code2, User, Database, Send, BookOpen, FileText, Briefcase } from "lucide-react";
 import ResumeModal from "./ResumeModal";
 
 export default function Navbar() {
@@ -17,6 +17,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "About", href: "#about", icon: User },
+    { name: "Experience", href: "#experience", icon: Briefcase },
     { name: "Skills", href: "#skills", icon: Database },
     { name: "Projects", href: "#projects", icon: Code2 },
     { name: "Contact", href: "#contact", icon: Send },

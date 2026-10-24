@@ -1,38 +1,50 @@
 [
   {
+    "name": "Placement Portal V2",
+    "description": "Full-featured placement management platform with separate student, company, and admin portals. Features JWT-based authentication, resume uploads, application tracking, and background job processing using Celery & Redis.",
+    "tech": ["Flask", "Vue.js", "SQLite", "JWT", "Redis", "Celery"],
+    "link": "https://github.com/Anikesh0001/Placement_portal_mad2"
+  },
+  {
     "name": "Hospital Management System",
-    "description": "A lightweight Hospital Management System (HMS) built with Flask, SQLAlchemy and Flask-Login. This project provides user roles (Admin, Doctor, Patient), appointment booking, doctor availability management, and basic admin interfaces.",
-    "tech": ["Flask", "SQLAlchemy", "Flask-Login"],
+    "description": "Healthcare management app handling patient records, appointment booking, and admin tasks with role-based access control. Deployed to cloud with optimized REST APIs.",
+    "tech": ["Flask", "Python", "SQL", "REST APIs", "Cloud"],
     "link": "https://github.com/Anikesh0001/hms_mad1"
   },
   {
+    "name": "Google Maps Scraper",
+    "description": "Automated data extraction tool for Google Maps listings. Scrapes business details, reviews, and contact information for market research and lead generation.",
+    "tech": ["Python", "Selenium", "BeautifulSoup"],
+    "link": "https://github.com/Anikesh0001/Google-Map-Scraper"
+  },
+  {
+    "name": "AniMusic",
+    "description": "A beautifully animated music streaming web application with playlist management, smooth UI transitions, and seamless audio playback.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/Anikesh0001/AniMusic"
+  },
+  {
     "name": "ProctoVision",
-    "description": "AI-based real-time exam proctoring with object & pose detection.",
+    "description": "AI-based real-time exam proctoring with advanced object detection and pose estimation using TensorFlow.js and MoveNet.",
     "tech": ["React", "TensorFlow.js", "MoveNet"],
     "link": "https://github.com/Anikesh0001/ProctoVision"
   },
   {
-    "name": "Sales Chatbot",
-    "description": "Conversational AI chatbot for product queries.",
-    "tech": ["Python", "LLMs"],
-    "link": "https://github.com/Anikesh0001/sales_chatbot"
-  },
-  {
     "name": "Gmail AI Assistant",
-    "description": "AI-powered Gmail automation using n8n workflows.",
-    "tech": ["n8n", "Gemini API"],
+    "description": "Intelligent email automation using n8n workflows and LLM integration to classify, prioritize, and auto-draft Gmail responses.",
+    "tech": ["n8n", "OpenAI API", "LLM", "Automation"],
     "link": "https://github.com/Anikesh0001/gmail-ai-assistant-n8n"
   },
   {
-    "name": "Road Safety System",
-    "description": "ML-based road-safety image detection system.",
-    "tech": ["Python", "OpenCV"],
-    "link": "https://github.com/Anikesh0001/road_safety"
+    "name": "HackRx – Query Retrieval",
+    "description": "LLM-powered intelligent document question-answering system using Gemini and Pinecone vector database for semantic search.",
+    "tech": ["FastAPI", "Pinecone", "Gemini API"],
+    "link": "https://github.com/Anikesh0001/hackrx"
   },
   {
-    "name": "HackRx – Query Retrieval System",
-    "description": "LLM-based document QA system built for HackRx.",
-    "tech": ["FastAPI", "Pinecone", "Gemini"],
-    "link": "https://github.com/Anikesh0001/hackrx"
+    "name": "Sales Chatbot",
+    "description": "Context-aware conversational AI chatbot for handling product inquiries and driving sales automation.",
+    "tech": ["Python", "NLP", "LLMs"],
+    "link": "https://github.com/Anikesh0001/sales_chatbot"
   }
 ]

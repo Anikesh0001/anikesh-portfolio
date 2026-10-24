@@ -1,14 +1,22 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Code2, Trophy, Briefcase } from "lucide-react";
+import { GraduationCap, Code2, Trophy, Briefcase, Brain } from "lucide-react";
 
 const TIMELINE_DATA = [
   {
+    year: "Present",
+    title: "Full Stack Developer",
+    place: "DataWeave, Bengaluru",
+    description: "Contributing to the Digital Shelf Analytics platform. Working on Python backend services, production debugging, and automated testing.",
+    icon: Briefcase,
+    color: "text-green-400"
+  },
+  {
     year: "2023 - Present",
-    title: "B.E. Computer Science",
+    title: "B.E. Information Science",
     place: "Vidyavardhaka College of Engineering",
-    description: "Building strong foundations in algorithms, system design, and software engineering. Consistent academic performer with 9.1 CGPA.",
+    description: "Building strong foundations in algorithms, system design, and software engineering. CGPA: 8.96/10. Won Best Co-curricular Award in 5th Semester.",
     icon: GraduationCap,
     color: "text-cyan-400"
   },
@@ -21,24 +29,22 @@ const TIMELINE_DATA = [
     color: "text-purple-400"
   },
   {
-    year: "2025",
-    title: "HackOrbit 2025",
-    place: "National Hackathon Finalist",
-    description: "Led a team to develop an innovative solution for real-world problems. Recognized for technical excellence and rapid prototyping.",
+    year: "2026",
+    title: "Hackathon Champion",
+    place: "Multiple National Wins",
+    description: "Winner of Hack the Hackers Hackathon. 1st Rank in Ai-Thon Global Coding Conquest. Finalist at National Hackathon, MITS.",
     icon: Trophy,
     color: "text-yellow-400"
   },
   {
-    year: "2024",
-    title: "Full Stack Development",
+    year: "2024 - 2026",
+    title: "Full Stack Projects",
     place: "Self-Driven",
-    description: "built multiple complex projects including LeetCode clone and Hospital Management System. Mastered React, Node.js, and Flask.",
+    description: "Built Placement Portal V2, Hospital Management System, Google Maps Scraper, and multiple AI-powered applications. 200+ DSA problems solved.",
     icon: Code2,
-    color: "text-green-400"
+    color: "text-cyan-300"
   }
 ];
-
-import { Brain } from "lucide-react"; // Import missing icon
 
 export default function AboutTimeline() {
   return (

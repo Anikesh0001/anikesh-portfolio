@@ -1,7 +1,7 @@
 {
-  "frontend": ["React", "Vite", "HTML", "CSS", "JavaScript"],
-  "backend": ["FastAPI", "Node.js", "Python"],
-  "ai": ["TensorFlow.js", "Gemini API", "Perplexity API", "LLMs"],
-  "database": ["PostgreSQL", "Firebase"],
-  "tools": ["Git", "GitHub", "Docker", "n8n"]
+  "frontend": ["Vue.js", "React", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+  "backend": ["Flask", "Node.js", "Express.js", "REST APIs", "Celery", "Redis"],
+  "ai": ["Machine Learning", "Deep Learning", "Computer Vision", "NLP", "LLM Integration", "Gemini API"],
+  "database": ["SQL", "SQLite", "SQLAlchemy", "MongoDB", "Firebase"],
+  "tools": ["Git", "GitHub", "Bitbucket", "Postman", "VS Code", "Jupyter", "n8n", "Jira", "Linux"]
 }

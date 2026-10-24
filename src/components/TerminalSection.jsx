@@ -42,6 +42,7 @@ Type 'help' to see a list of available commands.
   echo       - print out anything
   education  - my education background
   email      - send an email to me
+  experience - my work experience
   gui        - exit terminal mode
   projects   - view projects that I've coded
   skills     - check out my skills
@@ -49,7 +50,7 @@ Type 'help' to see a list of available commands.
   whoami     - about current user`;
           break;
         case "about":
-          response = `Hi! I'm Anikesh Kumar, a passionate Full-Stack Developer and Data Science Enthusiast. I specialize in building highly scalable applications using Python, React, and modern cloud technologies.`;
+          response = `Hi! I'm Anikesh Kumar, a Full Stack Developer currently working at DataWeave, Bengaluru. I build complete web applications from database to UI using Python/Flask, Vue.js, React, and more. I've solved 200+ DSA problems and won multiple hackathons including Hack the Hackers and Ai-Thon Global Coding Conquest.`;
           break;
         case "clear":
           setHistory([]);
@@ -68,19 +69,19 @@ Type 'help' to see a list of available commands.
           response = `You are already in GUI mode! Scroll up to explore more.`;
           break;
         case "projects":
-          response = `Check out the Projects section above for details on:
-- Sales Chatbot
-- Threat Detection Engine
-- Customer Analytics Platform`;
+          response = `My top projects:\n- Placement Portal V2 (Flask + Vue.js + JWT + Celery)\n- Hospital Management System (Flask + SQL)\n- Google Maps Scraper (Python + Selenium)\n- AniMusic (HTML/CSS/JS Music App)\n- ProctoVision (AI Exam Proctoring)\n- Gmail AI Assistant (n8n + OpenAI)\n\nType 'experience' for work details.`;
           break;
         case "skills":
-          response = `Python, Java, C++, TypeScript, React, Tailwind, GCP, Machine Learning, Data Structures & Algorithms.`;
+          response = `Languages: Python, Java, C, JavaScript\nFrontend: Vue.js, React, HTML5, CSS3, Tailwind\nBackend: Flask, Node.js, Express, REST APIs, JWT, Celery, Redis\nAI/ML: Machine Learning, Deep Learning, CV, NLP, LLM Integration\nDatabases: SQL, SQLite, MongoDB, Firebase\nTools: Git, Bitbucket, Postman, Jira, Linux, n8n`;
           break;
         case "sudo":
           response = `nice try, but you don't have root privileges.`;
           break;
         case "whoami":
           response = `visitor`;
+          break;
+        case "experience":
+          response = `💼 DataWeave — Full Stack Developer (Current)\n   Bengaluru, India\n\n   • Python backend services for Digital Shelf Analytics\n   • Production debugging & pipeline monitoring\n   • Automated testing & peer-reviewed PRs\n   • Stack: Python, SQL, RabbitMQ, REST APIs, Git`;
           break;
         case "":
           response = "";

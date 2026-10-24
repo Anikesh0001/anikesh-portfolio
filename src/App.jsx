@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutTimeline from "./components/AboutTimeline";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AIHighlights from "./components/AIHighlights";
@@ -35,6 +36,7 @@ export default function App() {
             
             <AIHighlights />
             <AboutTimeline />
+            <Experience />
             <Skills />
             <Projects />
             <Certifications />

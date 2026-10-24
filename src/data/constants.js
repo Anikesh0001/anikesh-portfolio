@@ -1,4 +1,3 @@
-
 import { 
   Github, 
   Linkedin, 
@@ -14,27 +13,27 @@ import {
 
 export const PROFILE = {
   name: "Anikesh Kumar",
-  title: "Full-Stack Developer | Data Science Enthusiast",
-  email: "anikeshkr0001@gmail.com",
+  title: "Full Stack Developer | AI & Data Science Enthusiast",
+  email: "anikeshkumar01work@gmail.com",
   location: "Mysuru, India",
-  description: "I build high-performance web applications and intelligent AI solutions. Passionate about solving complex problems with clean, scalable code.",
+  description: "Full Stack Developer who builds complete web applications from the database up to the UI. Experienced with Python/Flask, Vue.js, React, REST APIs, JWT auth, and background job processing with Celery & Redis. Background in ML and Data Structures.",
   social: {
     github: "https://github.com/Anikesh0001",
     linkedin: "https://www.linkedin.com/in/anikesh-kumar-289aaa290",
-    email: "mailto:anikeshkr0001@gmail.com",
+    email: "mailto:anikeshkumar01work@gmail.com",
   },
 };
 
 export const EDUCATION = [
   {
     institution: "Vidyavardhaka College of Engineering",
-    degree: "Bachelor of Engineering in Computer Science",
+    degree: "B.E. Information Science Engineering",
     duration: "2023 - 2027",
     location: "Mysore, Karnataka",
-    score: "CGPA: 9.1/10.00",
+    score: "CGPA: 8.96/10",
   },
   {
-    institution: "Indian Institute of Technology Madras (IIT Madras)",
+    institution: "IIT Madras",
     degree: "BS in Data Science and Applications",
     duration: "Pursuing",
     location: "Remote",
@@ -42,42 +41,76 @@ export const EDUCATION = [
   },
 ];
 
+export const EXPERIENCE = [
+  {
+    company: "DataWeave",
+    role: "Full Stack Developer",
+    duration: "Present",
+    location: "Bengaluru, India",
+    description: [
+      "Work on the DSA (Digital Shelf Analytics) platform, contributing to Python backend services handling data versioning, crawl scheduling, and the pipeline from collection to publishing.",
+      "Investigate production issues by tracing accounts and versions across pipeline stages on internal monitoring dashboards, then identify root causes and document findings.",
+      "Add automated tests and test stubs for existing modules following team conventions, raising PRs on Bitbucket that go through peer review."
+    ],
+    tech: ["Python", "SQL", "RabbitMQ", "REST APIs", "Redash", "Git", "Bitbucket", "Jira", "Linux"]
+  }
+];
+
 export const SKILLS = [
   {
     category: "Languages",
     icon: Code2,
-    items: ["Python", "Java", "C", "TypeScript", "JavaScript", "HTML/CSS"],
+    items: ["Python", "Java", "C", "JavaScript"],
   },
   {
     category: "Frontend",
     icon: Globe,
-    items: ["React", "Tailwind CSS", "Bootstrap", "Framer Motion"],
+    items: ["Vue.js", "React", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
   },
   {
     category: "Backend",
     icon: Terminal,
-    items: ["Node.js", "Express", "Flask", "Postman"],
+    items: ["Flask", "Node.js", "Express.js", "REST APIs", "JWT Auth", "Celery", "Redis"],
   },
   {
-    category: "AI / Data Science",
+    category: "AI / Machine Learning",
     icon: Cpu,
-    items: [
-      "NumPy & Pandas",
-      "Scikit-Learn",
-      "Matplotlib",
-      "EDA",
-      "Regression Models",
-      "Time Series Forecasting",
-    ],
+    items: ["Machine Learning", "Deep Learning", "Computer Vision", "NLP", "LLM Integration", "Regression", "Classification"],
+  },
+  {
+    category: "Databases",
+    icon: Database,
+    items: ["SQL", "SQLite", "SQLAlchemy", "MongoDB", "Firebase"],
   },
   {
     category: "Tools & DevOps",
     icon: Database,
-    items: ["Git & GitHub", "MongoDB", "SQL (SQLite)", "N8N Automation", "VS Code"],
+    items: ["Git", "GitHub", "Bitbucket", "Postman", "VS Code", "Jupyter Notebook", "n8n", "Jira", "Linux", "CI/CD"],
   },
 ];
 
 export const PROJECTS = [
+  {
+    title: "Placement Portal V2",
+    date: "Jun 2026",
+    description: "Full-featured placement management platform with separate student/company/admin portals, JWT authentication, resume uploads, and background job processing using Celery & Redis.",
+    tech: ["Python", "Flask", "Vue.js", "SQLite", "JWT", "Redis", "Celery"],
+    link: "https://github.com/Anikesh0001/Placement_portal_mad2",
+  },
+  {
+    title: "Google Maps Scraper",
+    date: "2025",
+    description: "Automated data extraction tool for Google Maps listings. Scrapes business details, reviews, and contact info for market research and lead generation.",
+    tech: ["Python", "Selenium", "BeautifulSoup", "Automation"],
+    link: "https://github.com/Anikesh0001/Google-Map-Scraper",
+  },
+  {
+    title: "AniMusic",
+    date: "2025",
+    description: "A beautiful music streaming web application with animated UI, playlist management, and seamless audio playback experience.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Anikesh0001/AniMusic",
+  },
   {
     title: "Hospital Management System",
     date: "Dec 2025",
@@ -123,8 +156,10 @@ export const PROJECTS = [
 ];
 
 export const ACHIEVEMENTS = [
-  "Solved 100+ LeetCode DSA problems, showcasing logical ability.",
-  "Finalist in National-Level Hackathon at MITS, demonstrating innovative problem-solving.",
-  "Participant in Smart India Hackathon (SIH), contributing to real-world solution prototyping.",
-  "Completed Foundation Level of BS Degree in Data Science from IIT Madras.",
+  "Solved 200+ Data Structures and Algorithms problems on coding platforms.",
+  "Winner — Hack the Hackers Hackathon, GSSSIETW.",
+  "1st Rank — Ai-Thon Global Coding Conquest.",
+  "Finalist — National Hackathon, MITS.",
+  "Best Co-curricular Award — 5th Semester, VVCE.",
+  "Participant — Smart India Hackathon (SIH), contributing to real-world solutions.",
 ];

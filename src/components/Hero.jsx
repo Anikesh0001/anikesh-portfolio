@@ -53,10 +53,10 @@ export default function Hero() {
           <div className="text-xl md:text-2xl text-gray-400 mb-8 font-mono h-8">
             <Typing
               text={[
-                "AI Engineer", 
-                "Full-Stack Developer", 
-                "Automation Expert", 
-                "ML Engineer"
+                "Full Stack Developer",
+                "Backend Engineer",
+                "AI Enthusiast",
+                "Problem Solver"
               ]}
               speed={100}
               eraseSpeed={50}
@@ -87,6 +87,13 @@ export default function Hero() {
               className="px-6 py-3 rounded-full glass border border-white/20 hover:bg-white/10 transition-all flex items-center gap-2 text-blue-400"
             >
               <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href={import.meta.env.BASE_URL + "resume.pdf"}
+              download
+              className="px-6 py-3 rounded-full glass border border-white/20 hover:bg-white/10 transition-all flex items-center gap-2 text-emerald-400"
+            >
+              <Download className="w-5 h-5" /> Resume
             </a>
           </div>
         </motion.div>
