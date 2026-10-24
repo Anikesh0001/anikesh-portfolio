@@ -10,7 +10,7 @@ const AI_PROJECTS = [
     tech: "Python + Selenium",
     icon: Globe,
     color: "from-green-500 to-emerald-400",
-    link: "https://github.com/Anikesh0001/google-map-scrapper"
+    link: "https://github.com/Anikesh0001/Google-Map-Scraper"
   },
   {
     name: "AniMusic",
@@ -18,7 +18,7 @@ const AI_PROJECTS = [
     tech: "HTML + CSS + JS",
     icon: Music,
     color: "from-pink-500 to-purple-500",
-    link: "https://github.com/Anikesh0001/animusic"
+    link: "https://github.com/Anikesh0001/AniMusic"
   },
   {
     name: "ProctoVision",
@@ -55,6 +55,7 @@ export default function AIHighlights() {
           <motion.a
             href={project.link}
             target="_blank"
+            rel="noopener noreferrer"
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

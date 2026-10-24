@@ -54,7 +54,7 @@ export default function Resume() {
                 </button>
 
                 <a
-                  href={getAssetPath("resume.pdf")}
+                  href={getAssetPath("resume.pdf") + "?v=20261025"}
                   download
                   className="px-8 py-4 rounded-full glass border border-white/20 hover:bg-white/10 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 font-bold group/btn"
                 >

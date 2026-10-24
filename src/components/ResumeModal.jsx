@@ -13,7 +13,8 @@ export default function ResumeModal({ isOpen, onClose }) {
     return cleanBaseUrl + cleanPath;
   };
 
-  const resumeUrl = getAssetPath("resume.pdf");
+  // ?v= busts the browser cache so an updated resume.pdf is always fetched fresh.
+  const resumeUrl = getAssetPath("resume.pdf") + "?v=20261025";
 
   return (
     <AnimatePresence>
