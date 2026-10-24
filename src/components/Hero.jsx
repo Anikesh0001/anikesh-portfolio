@@ -108,8 +108,11 @@ export default function Hero() {
           <div className="relative w-96 h-96 mx-auto group">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
             <img
-              src="https://github.com/Anikesh0001.png" 
+              src="https://github.com/Anikesh0001.png"
               alt={PROFILE.name}
+              width="384"
+              height="384"
+              fetchpriority="high"
               className="w-full h-full object-cover rounded-full border-4 border-white/10 shadow-2xl relative z-10 transition-transform duration-500"
             />
             

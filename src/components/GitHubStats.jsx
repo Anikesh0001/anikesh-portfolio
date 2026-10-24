@@ -19,13 +19,15 @@ export default function GitHubStats() {
           className="flex flex-col md:flex-row gap-6 justify-center"
         >
           <img 
-            src="https://github-readme-stats.vercel.app/api?username=Anikesh0001&show_icons=true&theme=default&hide_border=true&bg_color=030014&title_color=00f2ff&icon_color=7000ff&text_color=ffffff" 
+            src="https://github-readme-stats.vercel.app/api?username=Anikesh0001&show_icons=true&theme=default&hide_border=true&bg_color=030014&title_color=00f2ff&icon_color=7000ff&text_color=ffffff"
             alt="Anikesh's GitHub Stats"
+            loading="lazy"
             className="w-full md:w-1/2 rounded-xl shadow-lg border border-white/10"
           />
           <img 
-            src="https://github-readme-streak-stats.herokuapp.com/?user=Anikesh0001&theme=default&hide_border=true&background=030014&ring=7000ff&fire=00f2ff&currStreakLabel=7000ff" 
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Anikesh0001&theme=default&hide_border=true&background=030014&ring=7000ff&fire=00f2ff&currStreakLabel=7000ff"
             alt="Anikesh's Streak"
+            loading="lazy"
             className="w-full md:w-1/2 rounded-xl shadow-lg border border-white/10"
           />
         </motion.div>
@@ -36,8 +38,9 @@ export default function GitHubStats() {
           className="flex justify-center"
         >
           <img 
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anikesh0001&layout=compact&theme=default&hide_border=true&bg_color=030014&title_color=00f2ff&text_color=ffffff" 
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anikesh0001&layout=compact&theme=default&hide_border=true&bg_color=030014&title_color=00f2ff&text_color=ffffff"
             alt="Top Languages"
+            loading="lazy"
             className="w-full max-w-lg rounded-xl shadow-lg border border-white/10"
           />
         </motion.div>

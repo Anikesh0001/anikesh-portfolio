@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Fonts are loaded in index.html <head> with preconnect for faster first paint. */
 
 @tailwind base;
 @tailwind components;

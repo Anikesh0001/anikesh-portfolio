@@ -55,9 +55,10 @@ export default function Certifications() {
           viewport={{ once: true }}
           className="mb-16 rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] border border-cyan-400/20 relative group"
         >
-          <img 
-            src={getAssetPath("certificates/winning_moment.png")} 
-            alt="Winning Moment Highlight" 
+          <img
+            src={getAssetPath("certificates/winning_moment.png")}
+            alt="Winning Moment Highlight"
+            loading="lazy"
             className="w-full object-cover max-h-[70vh]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-[#030014]/40 to-transparent flex items-end">
@@ -93,7 +94,7 @@ export default function Certifications() {
                   {isPDF ? (
                     <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 group-hover:scale-105 transition-transform duration-500">
                       {issuerLogo ? (
-                        <img src={issuerLogo} alt={cert.issuer} className="h-16 w-auto mb-3 opacity-80" />
+                        <img src={issuerLogo} alt={cert.issuer} loading="lazy" className="h-16 w-auto mb-3 opacity-80" />
                       ) : (
                          <div className="p-4 rounded-full bg-white/5">
                             <Building size={40} className="text-gray-500" />
@@ -105,9 +106,10 @@ export default function Certifications() {
                     </div>
                   ) : (
                     <>
-                      <img 
-                        src={getAssetPath(cert.file)} 
-                        alt={cert.title} 
+                      <img
+                        src={getAssetPath(cert.file)}
+                        alt={cert.title}
+                        loading="lazy"
                         className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60" />
@@ -141,7 +143,7 @@ export default function Certifications() {
                   
                   <div className="flex items-center gap-2 text-xs text-gray-400 mb-4 font-medium">
                     {issuerLogo ? (
-                         <img src={issuerLogo} alt="Issuer" className="h-4 w-auto grayscale group-hover:grayscale-0 transition-all" /> 
+                         <img src={issuerLogo} alt="Issuer" loading="lazy" className="h-4 w-auto grayscale group-hover:grayscale-0 transition-all" />
                     ) : (
                         <Building size={14} />
                     )}
