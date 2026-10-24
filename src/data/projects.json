@@ -1,49 +1,57 @@
 [
   {
     "name": "Placement Portal V2",
-    "description": "Full-featured placement management platform with separate student, company, and admin portals. Features JWT-based authentication, resume uploads, application tracking, and background job processing using Celery & Redis.",
+    "category": "Web",
+    "description": "College placement platform with separate student, company, and admin roles. JWT auth, resume uploads, and application tracking, with Celery + Redis running exports and reminder emails in the background.",
     "tech": ["Flask", "Vue.js", "SQLite", "JWT", "Redis", "Celery"],
     "link": "https://github.com/Anikesh0001/Placement_portal_mad2"
   },
   {
     "name": "Hospital Management System",
-    "description": "Healthcare management app handling patient records, appointment booking, and admin tasks with role-based access control. Deployed to cloud with optimized REST APIs.",
+    "category": "Web",
+    "description": "Healthcare app for patient records, appointment booking, and admin tasks with role-based access. Backend REST APIs deployed to a live cloud environment on Render.",
     "tech": ["Flask", "Python", "SQL", "REST APIs", "Cloud"],
     "link": "https://github.com/Anikesh0001/hms_mad1"
   },
   {
-    "name": "Google Maps Scraper",
-    "description": "Automated data extraction tool for Google Maps listings. Scrapes business details, reviews, and contact information for market research and lead generation.",
-    "tech": ["Python", "Selenium", "BeautifulSoup"],
-    "link": "https://github.com/Anikesh0001/Google-Map-Scraper"
-  },
-  {
-    "name": "AniMusic",
-    "description": "A beautifully animated music streaming web application with playlist management, smooth UI transitions, and seamless audio playback.",
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com/Anikesh0001/AniMusic"
-  },
-  {
     "name": "ProctoVision",
-    "description": "AI-based real-time exam proctoring with advanced object detection and pose estimation using TensorFlow.js and MoveNet.",
+    "category": "AI",
+    "description": "Real-time exam proctoring in the browser using object detection and pose estimation to flag suspicious behaviour and keep assessments fair.",
     "tech": ["React", "TensorFlow.js", "MoveNet"],
     "link": "https://github.com/Anikesh0001/ProctoVision"
   },
   {
-    "name": "Gmail AI Assistant",
-    "description": "Intelligent email automation using n8n workflows and LLM integration to classify, prioritize, and auto-draft Gmail responses.",
-    "tech": ["n8n", "OpenAI API", "LLM", "Automation"],
-    "link": "https://github.com/Anikesh0001/gmail-ai-assistant-n8n"
-  },
-  {
-    "name": "HackRx – Query Retrieval",
-    "description": "LLM-powered intelligent document question-answering system using Gemini and Pinecone vector database for semantic search.",
+    "name": "HackRx — Query Retrieval",
+    "category": "AI",
+    "description": "LLM-powered document question-answering system using a Gemini model and a Pinecone vector database for fast semantic search over large files.",
     "tech": ["FastAPI", "Pinecone", "Gemini API"],
     "link": "https://github.com/Anikesh0001/hackrx"
   },
   {
+    "name": "Google Maps Scraper",
+    "category": "Automation",
+    "description": "Automated data-extraction tool that pulls business details, reviews, and contact info from Google Maps listings for market research and lead generation.",
+    "tech": ["Python", "Selenium", "BeautifulSoup"],
+    "link": "https://github.com/Anikesh0001/Google-Map-Scraper"
+  },
+  {
+    "name": "Gmail AI Assistant",
+    "category": "Automation",
+    "description": "An n8n workflow that reads incoming Gmail, classifies and prioritises messages with an LLM, and drafts replies — turning repetitive email triage into a hands-off pipeline.",
+    "tech": ["n8n", "OpenAI API", "LLM", "Automation"],
+    "link": "https://github.com/Anikesh0001/gmail-ai-assistant-n8n"
+  },
+  {
+    "name": "AniMusic",
+    "category": "Web",
+    "description": "An animated music-streaming web app with playlist management, smooth UI transitions, and seamless audio playback.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/Anikesh0001/AniMusic"
+  },
+  {
     "name": "Sales Chatbot",
-    "description": "Context-aware conversational AI chatbot for handling product inquiries and driving sales automation.",
+    "category": "AI",
+    "description": "Context-aware conversational assistant for product inquiries and sales automation, built on top of LLMs and lightweight NLP.",
     "tech": ["Python", "NLP", "LLMs"],
     "link": "https://github.com/Anikesh0001/sales_chatbot"
   }

@@ -1,7 +1,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, ExternalLink, Cpu, Eye, MessageSquare, Mail, Globe, Music } from "lucide-react";
+import { ExternalLink, Cpu, Eye, Mail, Globe, Music } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const AI_PROJECTS = [
   {
@@ -41,14 +42,12 @@ const AI_PROJECTS = [
 export default function AIHighlights() {
   return (
     <section className="section-padding relative overflow-hidden">
-      <div className="text-center mb-16 relative z-10">
-        <h2 className="text-4xl font-bold mb-4">
-          Featured <span className="text-gradient">Projects Spotlight</span>
-        </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto">
-          Standout projects showcasing automation, AI, and creative development.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="01 — Spotlight"
+        title="Projects I'm"
+        highlight="proud of"
+        subtitle="A few standouts across automation, AI, and creative front-end work."
+      />
 
       <div className="grid md:grid-cols-2 gap-8 relative z-10">
         {AI_PROJECTS.map((project, index) => (
@@ -59,7 +58,8 @@ export default function AIHighlights() {
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative block"
           >
             <div className={`absolute inset-0 bg-gradient-to-r ${project.color} rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />

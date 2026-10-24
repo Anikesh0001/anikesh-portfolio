@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import skillsData from "../data/skills.json";
+import SectionHeader from "./SectionHeader";
 
 // Manual icon mapping since JSON can't store icon components
 import { Code2, Globe, Database, Terminal, Cpu, PenTool } from "lucide-react";
@@ -18,19 +19,29 @@ const getIcon = (category) => {
   return map[category] || Code2;
 };
 
+// Display labels (keeps acronyms like "AI" uppercase).
+const getLabel = (category) => {
+  const map = {
+    frontend: "Frontend",
+    backend: "Backend",
+    ai: "AI & ML",
+    database: "Database",
+    tools: "Tools & DevOps",
+  };
+  return map[category] || category;
+};
+
 export default function Skills() {
   const categories = Object.keys(skillsData);
 
   return (
     <section id="skills" className="section-padding">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">
-          Tech <span className="text-gradient">Arsenal</span>
-        </h2>
-        <p className="text-gray-400">
-          Tools and technologies I use to craft digital experiences.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="03 — Stack"
+        title="Skills &"
+        highlight="Tools"
+        subtitle="The languages, frameworks, and tools I reach for to build and ship full-stack applications."
+      />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category, index) => {
@@ -47,7 +58,7 @@ export default function Skills() {
                 <div className="p-3 rounded-xl bg-white/5 text-cyan-400 group-hover:scale-110 transition-transform">
                   <Icon size={24} />
                 </div>
-                <h3 className="text-xl font-bold capitalize">{category}</h3>
+                <h3 className="text-xl font-bold">{getLabel(category)}</h3>
               </div>
               
               <div className="flex flex-wrap gap-2">

@@ -4,10 +4,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Code2, User, Database, Send, BookOpen, FileText, Briefcase } from "lucide-react";
 import ResumeModal from "./ResumeModal";
 
+const navLinks = [
+  { name: "About", href: "#about", icon: User },
+  { name: "Experience", href: "#experience", icon: Briefcase },
+  { name: "Skills", href: "#skills", icon: Database },
+  { name: "Projects", href: "#projects", icon: Code2 },
+  { name: "Contact", href: "#contact", icon: Send },
+];
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showResume, setShowResume] = useState(false);
+  const [active, setActive] = useState("");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -15,13 +24,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "About", href: "#about", icon: User },
-    { name: "Experience", href: "#experience", icon: Briefcase },
-    { name: "Skills", href: "#skills", icon: Database },
-    { name: "Projects", href: "#projects", icon: Code2 },
-    { name: "Contact", href: "#contact", icon: Send },
-  ];
+  // Scroll-spy: highlight the nav link for the section in view.
+  useEffect(() => {
+    const ids = navLinks.map((l) => l.href.slice(1));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -44,16 +63,27 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium flex items-center gap-2 group"
-              >
-                <link.icon className="w-4 h-4 group-hover:animate-bounce" />
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = active === link.href.slice(1);
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className={`relative text-sm font-medium flex items-center gap-2 transition-colors ${
+                    isActive ? "text-cyan-400" : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  <link.icon className="w-4 h-4" />
+                  {link.name}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-underline"
+                      className="absolute -bottom-1.5 left-0 right-0 h-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-purple-600"
+                    />
+                  )}
+                </a>
+              );
+            })}
             
             <button
               onClick={() => setShowResume(true)}

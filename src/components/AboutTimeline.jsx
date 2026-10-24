@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Code2, Trophy, Briefcase, Brain } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const TIMELINE_DATA = [
   {
@@ -49,9 +50,13 @@ const TIMELINE_DATA = [
 export default function AboutTimeline() {
   return (
     <section id="about" className="section-padding">
-      <h2 className="text-4xl font-bold text-center mb-16">
-        My <span className="text-gradient">Journey</span>
-      </h2>
+      <SectionHeader
+        eyebrow="02 — About"
+        title="My"
+        highlight="Journey"
+        subtitle="Education, work, and the milestones that shaped how I build."
+        align="center"
+      />
 
       <div className="max-w-3xl mx-auto relative">
         {/* Vertical Line */}

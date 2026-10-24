@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, Building, ExternalLink, FileText } from "lucide-react";
 import CertificateModal from "./CertificateModal";
+import SectionHeader from "./SectionHeader";
 
 export default function Certifications() {
   const [certificates, setCertificates] = useState([]);
@@ -34,19 +35,13 @@ export default function Certifications() {
        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[120px] -z-10" />
 
       <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-4">
-            Certifications & <span className="text-gradient">Achievements</span>
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Verified certifications, academic credentials, and national-level participations.
-          </p>
-        </motion.div>
+        <SectionHeader
+          eyebrow="— Credentials"
+          title="Certifications &"
+          highlight="Achievements"
+          subtitle="Verified certifications, academic credentials, and national-level participations."
+          align="center"
+        />
 
         {/* Winning Moment Highlight */}
         <motion.div

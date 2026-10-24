@@ -1,62 +1,87 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { Trophy, Medal, Award, Star, Flag, Target } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Quote } from "lucide-react";
-import testimonialsData from "../data/testimonials.json";
+// Honest, verifiable recognition — stronger than anonymous testimonials.
+const RECOGNITION = [
+  {
+    icon: Trophy,
+    title: "Winner",
+    detail: "Hack the Hackers Hackathon — GSSSIETW",
+    color: "text-yellow-400",
+    ring: "from-yellow-500/20",
+  },
+  {
+    icon: Medal,
+    title: "1st Rank",
+    detail: "Ai-Thon — Global Coding Conquest",
+    color: "text-cyan-400",
+    ring: "from-cyan-500/20",
+  },
+  {
+    icon: Award,
+    title: "Finalist",
+    detail: "National Hackathon — MITS",
+    color: "text-purple-400",
+    ring: "from-purple-500/20",
+  },
+  {
+    icon: Star,
+    title: "Best Co-curricular Award",
+    detail: "5th Semester — VVCE, Mysuru",
+    color: "text-emerald-400",
+    ring: "from-emerald-500/20",
+  },
+  {
+    icon: Flag,
+    title: "Participant",
+    detail: "National Road Safety Hackathon — IIT Madras",
+    color: "text-pink-400",
+    ring: "from-pink-500/20",
+  },
+  {
+    icon: Target,
+    title: "200+ DSA Problems",
+    detail: "Solved across competitive coding platforms",
+    color: "text-orange-400",
+    ring: "from-orange-500/20",
+  },
+];
 
 export default function Testimonials() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % testimonialsData.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section className="section-padding bg-[#05051a]">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          What People <span className="text-gradient">Say</span>
-        </h2>
+    <section id="recognition" className="section-padding bg-[#05051a]">
+      <SectionHeader
+        eyebrow="— Recognition"
+        title="Wins &"
+        highlight="Highlights"
+        subtitle="Competitions, awards, and milestones I've earned along the way."
+        align="center"
+      />
 
-        <div className="relative min-h-[300px] flex items-center justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.5 }}
-              className="text-center"
-            >
-              <Quote size={48} className="text-cyan-400/30 mx-auto mb-6" />
-              
-              <p className="text-2xl md:text-3xl font-light text-gray-200 mb-8 italic leading-relaxed">
-                "{testimonialsData[index].feedback}"
-              </p>
-              
-              <div className="inline-block">
-                <h4 className="text-xl font-bold text-white">{testimonialsData[index].name}</h4>
-                <p className="text-cyan-400">{testimonialsData[index].role}</p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {RECOGNITION.map((item, index) => (
+          <motion.div
+            key={item.title + item.detail}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+            className="group relative glass rounded-2xl p-6 border border-white/10 hover:border-white/20 hover:-translate-y-1 transition-all duration-400 overflow-hidden"
+          >
+            <div
+              className={`absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br ${item.ring} to-transparent blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+            />
+            <div className="relative z-10">
+              <div className={`p-3 rounded-xl bg-white/5 inline-flex mb-4 ${item.color}`}>
+                <item.icon size={24} />
               </div>
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Dots */}
-          <div className="absolute -bottom-10 flex gap-2">
-            {testimonialsData.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setIndex(i)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  i === index ? "bg-cyan-400 w-8" : "bg-gray-700 hover:bg-gray-500"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
+              <h3 className="text-lg font-bold text-white mb-1">{item.title}</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">{item.detail}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
